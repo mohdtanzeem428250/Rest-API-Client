@@ -1,0 +1,20 @@
+package com.application;
+
+import javax.swing.SwingUtilities;
+
+public class AppLauncher 
+{
+	public static void main(String[] args)
+	{
+		SwingUtilities.invokeLater(new Runnable()
+		{
+			@Override
+			public void run()
+			{
+				new WeatherApplicationGUI().setVisible(true);
+//				System.out.println(WeatherApplication.getLocationData("Tokyo"));
+				//System.out.println(WeatherApplication.getCurrentTime());
+			}
+		});
+	}
+}
