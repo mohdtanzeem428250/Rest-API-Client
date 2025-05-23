@@ -1,0 +1,82 @@
+import java.io.BufferedReader;	 	// Used to read the response from the server
+import java.io.IOException; 	// Handles input/output exceptions
+import java.io.InputStreamReader; 	// Converts bytes into characters to read input stream
+import java.net.HttpURLConnection; 	// Represents a HTTP connection
+import java.net.MalformedURLException;	 // Exception for malformed URL
+import java.net.URL; 	// Represents a URL object
+
+	// Class to send an HTTP GET request and receive a JSON response
+class Http_Request_Json_Response
+{
+    private static HttpURLConnection connection; 	// Declare a static HTTP connection
+
+    public static void main(String[] args)
+    {
+        BufferedReader bufferedReader; 	// Used to read the input stream line by line
+        String line; 	// Stores each line read from the response
+        StringBuffer responseContent = new StringBuffer(); 	// Stores the full response content
+
+        try
+        {
+            	// Create a URL object with the GitHub API endpoint
+            URL url = new URL("https://api.github.com/users/mohdtanzeem428250");
+
+            	// Open a connection to the URL and cast it to HttpURLConnection
+            connection = (HttpURLConnection) url.openConnection();
+
+            	// Set the request method to GET
+            connection.setRequestMethod("GET");
+
+           	 // Set connection timeout to 5000 milliseconds (5 seconds)
+            connection.setConnectTimeout(5000);
+
+            	// Set read timeout to 5000 milliseconds (5 seconds)
+            connection.setReadTimeout(5000);
+
+            	// Get the status code from the response
+            int status = connection.getResponseCode();
+
+            	// If status code is more than 299, it's an error response
+            if(status > 299)
+            {
+               	 // Read the error stream
+                bufferedReader = new BufferedReader(new InputStreamReader(connection.getErrorStream()));
+                while((line = bufferedReader.readLine()) != null)
+                {
+                   		 // Append each line to the responseContent
+                    responseContent.append(line);
+                }
+                bufferedReader.close(); // Close the BufferedReader
+            }
+            else
+            {
+                // Read the input stream (successful response)
+                bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                while((line = bufferedReader.readLine()) != null)
+                {
+                    // Append each line to the responseContent
+                    responseContent.append(line);
+                }
+                bufferedReader.close(); // Close the BufferedReader
+            }
+
+            // Print the final response content as a string
+            System.out.println(responseContent.toString());
+        }
+        catch(MalformedURLException exception)
+        {
+            // Handle error when the URL is not valid
+            exception.printStackTrace();
+        }
+        catch(IOException exception)
+        {
+            // Handle general I/O exceptions
+            exception.printStackTrace();
+        }
+        finally
+        {
+            // Disconnect the HTTP connection (cleanup)
+            connection.disconnect();
+        }
+    }
+}
