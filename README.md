@@ -35,24 +35,24 @@ The main objective of this application is to provide current weather information
 
 - OpenWeatherMap API (or any public weather API)
 
-## Application Workflow
+# Application Workflow
 
-# 1.User Interface (Swing): 
+## 1.User Interface (Swing): 
 The application starts with a simple GUI created using Java Swing components such as JFrame, JLabel, JTextField, and JButton. The user enters a city name into a text field and clicks a button to get the weather.
 
-# 2.API Request: 
+## 2.API Request: 
 Upon clicking the button, the application constructs a URL for the weather API, including the city name and API key. This request is made using Java’s HttpURLConnection or HttpClient.
 
-# 3.Fetching Data: 
+## 3.Fetching Data: 
 The response from the weather API is received in JSON format. This includes details such as temperature, humidity, weather conditions, and wind speed.
 
-# 4.Parsing JSON: 
+## 4.Parsing JSON: 
 The application parses the JSON response using a JSON parsing library like org.json or Google’s Gson to extract relevant weather data.
 
-# 5.Displaying Results: 
+## 5.Displaying Results: 
 The extracted weather data is then displayed on the same Swing GUI using labels or text areas. The user can see the temperature, condition (e.g., Sunny, Rainy), humidity, and more.
 
-## Features
+# Features
 - City-based weather search
 
 - Real-time weather data using a public REST API
