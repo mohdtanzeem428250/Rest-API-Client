@@ -33,11 +33,13 @@ The Weather App utilizes the following technologies and libraries:
 
 ![Image](https://github.com/user-attachments/assets/d014347c-227d-4969-a417-17222d85e335)
 
-## Output France Weather
+## Output Dubai Weather
 
 ![Image](https://github.com/user-attachments/assets/865512d8-ae30-456d-85b5-e38324c5f9ec)
 
 ## Output London Weather
+
+![Image](https://github.com/user-attachments/assets/16193d28-ee3c-4966-ab81-0813432673db)
 
 # Class Summaries
 
