@@ -29,6 +29,16 @@ The Weather App utilizes the following technologies and libraries:
 - JSON Simple - Used to parse and read through JSON data
 - HTTPURLConnection: Java's built-in library for making HTTP requests to fetch data from external APIs.
 
+## Output India Weather
+
+![Image](https://github.com/user-attachments/assets/d014347c-227d-4969-a417-17222d85e335)
+
+## Output France Weather
+
+
+
+## Output London Weather
+
 # Class Summaries
 
 # 3.1. AppLauncher 
