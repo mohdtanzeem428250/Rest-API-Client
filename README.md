@@ -30,8 +30,8 @@ The Weather App utilizes the following technologies and libraries:
 - HTTPURLConnection: Java's built-in library for making HTTP requests to fetch data from external APIs.
 
 # Class Summaries
-**3.1. AppLauncher**
-Description: The AppLauncher class serves as the entry point for the Weather App. It initializes the GUI and displays the main application window.
+
+**3.1. AppLauncher Description:** The AppLauncher class serves as the entry point for the Weather App. It initializes the GUI and displays the main application window.
 
 # 3.2. WeatherAppGui
 **Description:** The WeatherAppGui class represents the graphical user interface (GUI) of the Weather App. It is responsible for displaying weather information for a specified location.
