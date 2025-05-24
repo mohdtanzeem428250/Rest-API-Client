@@ -25,11 +25,12 @@ The Weather App is a Java-based application that provides users with real-time w
 # Technologies Used
 The Weather App utilizes the following technologies and libraries:
 
-Java 18
-JSON Simple - Used to parse and read through JSON data
-HTTPURLConnection: Java's built-in library for making HTTP requests to fetch data from external APIs.
+- Java 18
+- JSON Simple - Used to parse and read through JSON data
+- HTTPURLConnection: Java's built-in library for making HTTP requests to fetch data from external APIs.
+- 
 # Class Summaries
-3.1. AppLauncher
+*3.1. AppLauncher*
 Description: The AppLauncher class serves as the entry point for the Weather App. It initializes the GUI and displays the main application window.
 
 # 3.2. WeatherAppGui
