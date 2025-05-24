@@ -28,18 +28,18 @@ The Weather App utilizes the following technologies and libraries:
 - Java 18
 - JSON Simple - Used to parse and read through JSON data
 - HTTPURLConnection: Java's built-in library for making HTTP requests to fetch data from external APIs.
-- 
+
 # Class Summaries
-*3.1. AppLauncher*
+**3.1. AppLauncher**
 Description: The AppLauncher class serves as the entry point for the Weather App. It initializes the GUI and displays the main application window.
 
 # 3.2. WeatherAppGui
-Description: The WeatherAppGui class represents the graphical user interface (GUI) of the Weather App. It is responsible for displaying weather information for a specified location.
+**Description:** The WeatherAppGui class represents the graphical user interface (GUI) of the Weather App. It is responsible for displaying weather information for a specified location.
 
 Summary: This class handles the layout and display of GUI components, including text fields, labels, buttons, and images. It also implements the user interface for entering a location and updating the weather information based on user input.
 
 # 3.3. WeatherApp
-Description: The WeatherApp class contains the backend logic for fetching weather data from an external API. It retrieves geographic coordinates for a location, fetches weather data for that location, and provides methods to convert weather codes.
+**Description:** The WeatherApp class contains the backend logic for fetching weather data from an external API. It retrieves geographic coordinates for a location, fetches weather data for that location, and provides methods to convert weather codes.
 
 # Summary: 
 
