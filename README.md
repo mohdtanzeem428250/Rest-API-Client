@@ -35,7 +35,7 @@ The Weather App utilizes the following technologies and libraries:
 
 ## Output France Weather
 
-
+![Image](https://github.com/user-attachments/assets/865512d8-ae30-456d-85b5-e38324c5f9ec)
 
 ## Output London Weather
 
